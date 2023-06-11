@@ -23,11 +23,13 @@ To run the app locally, follow these steps:
    git clone https://github.com/your-username/covid-tracker.git
 
 2. Install dependencies:
+
   ```bash
    npm install
 
 
 3. Start the development server:
+
   ```bash
    npm start
 
