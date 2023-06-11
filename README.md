@@ -23,11 +23,13 @@ To run the app locally, follow these steps:
    git clone https://github.com/your-username/covid-tracker.git
 
 2. Install dependencies:
-npm install
+  ```bash
+   npm install
 
 
 3. Start the development server:
-npm start
+  ```bash
+   npm start
 
 
 4. Open your browser and visit http://localhost:3000 to view the app.
@@ -36,6 +38,7 @@ API Endpoint
 The app utilizes the following API endpoints:
 
 World-wide data of cases: https://disease.sh/v3/covid-19/all
+
 Graph data for cases with date: https://disease.sh/v3/covid-19/historical/all?lastdays=all
 
 ## Technologies Used
