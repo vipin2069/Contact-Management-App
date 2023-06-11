@@ -30,7 +30,6 @@ To run the app locally, follow these steps:
      ```bash
       npm start
 
-
 4. Open your browser and visit http://localhost:3000 to view the app.
 
 API Endpoint
