@@ -9,11 +9,18 @@ const ContactList: React.FC = () => {
   const contacts = useSelector(selectAllContacts);
   const dispatch = useDispatch();
   const [searchTerm, setSearchTerm] = useState("");
+  // const filteredContacts = contacts.filter((contact: Contact) => {
+  //   if (contact.fname?.includes(searchTerm?.toLowerCase())) {
+  //     return contact.fname;
+  //   }
+  // });
   const filteredContacts = contacts.filter((contact: Contact) => {
     if (contact.fname?.includes(searchTerm?.toLowerCase())) {
-      return contact.fname;
+      return true; // include the contact in the filtered array
     }
+    return false; // exclude the contact from the filtered array
   });
+
   const handleDelete = (id: string) => {
     dispatch(deleteContact(id));
   };
@@ -65,13 +72,16 @@ const ContactList: React.FC = () => {
             <ul className="divide-y divide-gray-100">
               {filteredContacts.length > 0 ? (
                 <>
-                  {filteredContacts.map((contact: Contact) => (
+                  {filteredContacts.map((contact: Contact, index: number) => (
                     <li
                       key={contact.id}
                       className="flex justify-between gap-x-6 py-5"
                     >
                       <div className="flex gap-x-4">
-                        <div className="min-w-0 flex-auto">
+                        <p className="text-sm font-semibold leading-6 text-gray-900">
+                          {index + 1}.
+                        </p>
+                        <div className="min-w-0 flex flex-col items-start">
                           <p className="text-sm font-semibold leading-6 text-gray-900">
                             {contact.fname} {contact.lname}
                           </p>
