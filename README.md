@@ -24,13 +24,13 @@ To run the app locally, follow these steps:
 
 2. Install dependencies:
 
-  ```bash
+   ```bash
    npm install
 
 
 3. Start the development server:
 
-  ```bash
+   ```bash
    npm start
 
 
