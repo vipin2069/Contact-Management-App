@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Contact Management App with Charts and Maps
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## For Contacts Page
+The Contacts page in the app includes the following features:
 
-## Available Scripts
+Form for adding new contacts
+List of all added contacts
+Edit and delete functionality for contacts
+The contact data is stored using Redux, which provides a centralized store for managing state in the app.
 
-In the project directory, you can run:
+## COVID-19 Tracker
 
-### `npm start`
+This is a COVID-19 Tracker application built with ReactJS, TypeScript, TailwindCSS, React Router v6, and React Query.
+The app displays a line graph showing the cases fluctuations and a map with markers indicating the country name, total number of active, recovered cases, and deaths.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To run the app locally, follow these steps:
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/your-username/covid-tracker.git
 
-### `npm run build`
+2. Install dependencies:
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
+npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+4. Open your browser and visit http://localhost:3000 to view the app.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+API Endpoint
+The app utilizes the following API endpoints:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+World-wide data of cases: https://disease.sh/v3/covid-19/all
+Graph data for cases with date: https://disease.sh/v3/covid-19/historical/all?lastdays=all
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Technologies Used
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The app utilizes the following technologies and libraries:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ReactJS: JavaScript library for building user interfaces.
+- TypeScript: Typed superset of JavaScript for improved developer experience.
+- TailwindCSS: Utility-first CSS framework for styling.
+- React Router v6: Library for declarative routing in React applications.
+- React Query: Library for handling API calls and data management.
+- Redux: Library for state management in JavaScript applications.
+- Chart.js: JavaScript library for creating interactive and responsive charts.
+- React Chart.js 2: React wrapper for Chart.js, providing a seamless integration with React.
+- Leaflet: Open-source JavaScript library for interactive maps.
+- React Leaflet: React wrapper for Leaflet, enabling the use of Leaflet maps within React components.
