@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  NavLink,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import ContactForm from "./components/ContactForm";
 import ContactList from "./components/ContactList";
@@ -25,7 +20,7 @@ const App: React.FC = () => {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Router>
+      <BrowserRouter basename="/Contact-Management-App">
         <div className="sidebarNavigation flex">
           {screenSize &&
             (!toggleSidebar ? (
@@ -162,7 +157,7 @@ const App: React.FC = () => {
             </Routes>
           </div>
         </div>
-      </Router>
+      </BrowserRouter>
     </QueryClientProvider>
   );
 };
