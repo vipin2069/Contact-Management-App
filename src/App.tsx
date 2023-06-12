@@ -82,7 +82,7 @@ const App: React.FC = () => {
             <ul className="space-y-4">
               <li>
                 <NavLink
-                  to="/"
+                  to="#"
                   className="flex gap-2 p-2 rounded hover:bg-gray-300"
                 >
                   <svg
@@ -154,7 +154,7 @@ const App: React.FC = () => {
           </nav>
           <div className={`${toggleSidebar ? "w-full" : "routesTabs"} p-4`}>
             <Routes>
-              <Route path="/" element={<ContactList />} />
+              <Route path="#" element={<ContactList />} />
               <Route path="/add/:id" element={<ContactForm />} />
               <Route path="/add/" element={<ContactForm />} />
               <Route path="/map" element={<CovidMap />} />
