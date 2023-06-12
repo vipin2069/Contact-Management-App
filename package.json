@@ -2,7 +2,7 @@
   "name": "contact-management-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vipin2069.github.io/Contact-Management-App_upload",
+  "homepage": "https://vipin2069.github.io/Contact-Management-App",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",

@@ -92,12 +92,10 @@ const ContactList: React.FC = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="flex flex-row gap-2 sm:flex sm:flex-col sm:items-end">
-                        <Link to={`/add/${contact.id}`}>
-                          <button className="editBtn flex w-full justify-center rounded-md px-8 py-1.5 bg-slate-400 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                            Edit
-                          </button>
-                        </Link>
+                      <div className="listButtons flex flex-col gap-2 sm:flex-col sm:items- ">
+                        <button className="editBtn flex w-full justify-center rounded-md px-8 py-1.5 bg-slate-400 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                          Edit
+                        </button>
                         <button
                           className="flex w-full justify-center rounded-md bg-indigo-600 px-8 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                           onClick={() => handleDelete(contact.id)}
@@ -127,7 +125,7 @@ const ContactList: React.FC = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="flex flex-row gap-2 sm:flex sm:flex-col sm:items-end">
+                      <div className="listButtons flex flex-col gap-2 sm:flex-col sm:items- ">
                         <button className="editBtn flex w-full justify-center rounded-md px-8 py-1.5 bg-slate-400 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                           Edit
                         </button>
